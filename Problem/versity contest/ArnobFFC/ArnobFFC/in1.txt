@@ -1,0 +1,11 @@
+5
+aaaaaa.com
+aaaaaa.bd
+aaaaaa.co
+aaaaab.com
+aaaaaa.dom
+4
+aaaaaa.bd
+aaaaaa.co
+aaaaaa.dom
+aaaaab.com

@@ -1,0 +1,8 @@
+Chef decided to teach some advanced recipes to junior chefs. On the very first day of their cooking sessions, to identify the cooking abilities of each junior chef, Chef instructed them to make their premier dishes. The junior chefs were very excited and they all went into the kitchen to cook their dishes.
+
+Chef has a limited number of jars in the kitchen. The jars are magical ― if a chef that is cooking a dish requiring x ingredients takes x jars, each of these jars fills itself with one of the required ingredients, and after this chef finishes cooking and returns the jars to the kitchen, they empty themselves (and are ready for other chefs to take some or all of them). Of course, this means it is impossible to cook a dish requiring x ingredients with less than x jars.
+
+Since Chef did not tell the junior chefs in which order they should prepare their dishes, they started picking up jars simultaneously and in the end, no junior chef was able to acquire enough jars to prepare their premier dish. Also, none of the junior chefs are willing to lend their jars to others. Chef was unable to handle the situation and decided to call off the cooking session for that day, so that he could get more jars and try it again later.
+
+
+th chef by ai. Any distribution of jars such that 0≤ai for each valid i and ∑Ni=1ai=J is possible.

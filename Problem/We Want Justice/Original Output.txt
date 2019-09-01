@@ -1,0 +1,39 @@
+Case 1: Expired.
+Case 2: Invalid.
+Case 3: Valid.
+Total Penalty Money: 60$.
+Case 4: Expired.
+Case 5: Expired.
+Case 6: Expired.
+Case 7: Valid.
+Total Penalty Money: 210$.
+Case 8: Invalid.
+Case 9: Expired.
+Case 10: Expired.
+Case 11: Valid.
+Total Penalty Money: 150$.
+Case 12: Valid.
+Total Penalty Money: 40950$.
+Case 13: Expired.
+Case 14: Expired.
+Case 15: Expired.
+Case 16: Expired.
+Case 17: Valid.
+Total Penalty Money: 550$.
+Case 18: Valid.
+Total Penalty Money: 550$.
+Case 19: Valid.
+Total Penalty Money: 550$.
+Case 20: Valid.
+Total Penalty Money: 0$.
+Case 21: Valid.
+Total Penalty Money: 0$.
+Case 22: Valid.
+Total Penalty Money: 50500$.
+Case 23: Valid.
+Total Penalty Money: 0$.
+Case 24: Invalid.
+Case 25: Valid.
+Total Penalty Money: 0$.
+Case 26: Valid.
+Total Penalty Money: 60$.

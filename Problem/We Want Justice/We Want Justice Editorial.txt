@@ -1,0 +1,90 @@
+﻿Problem Name    : We want Junstice
+Problem Writter : Md. Elias Hassan Naim,BUBT,CSE,32nd Intake.
+Special Thanks  : Md. Taufique Ahamed,BUBT,CSE,32nd Intake.
+
+
+Editorial:
+এখানে আমরা যদি Today এবং ইনপুটের License Expired Date টার  month কে ৩০ দিয়ে গুণ করে এবং year কে ৩৬৫ দিয়ে গুণ করে সবাইকে day তে কনভার্ট করে নেই তাহলে আমাদের জন্য প্রব্লেমটার সলভ করা আরো ইজি হয়ে যাবে । 
+ধরে নেই দিনে কনভার্ট করার পর  today এবং ইনপুটের license expired date যথাক্রমে day1 এবং  day2 দুইটা ভ্যারিয়েবলে সেভ করি তাহলে আমরা এই দুইটা ভ্যারিয়েবল  compare করেলেই বুঝে যাবো যে লাইসেন্সটার 
+ডেট আছে কিনা । তারমানে day1<day2 কন্ডিশনটি যদি false হয় তাহলে আউটপুট আসবে Expired , কারন license expired date এর মেয়াদ আজকে কিংবা তার আগেই শেষ হয়ে গিয়েছে । এখন কন্ডিশনটি যদি true হয় তাহলে আমরা চেক করবো যে ড্রাইভারের 
+current point , required point এর সমান কিংবা বেশি কি না  । That means (T-K>R) is true or false. যদি এই কন্ডিশনটি  false হয় তাহলে আউটপুট আসবে Invalid , কারন ড্রাইভারের বর্তমান পয়েন্ট minimum required point থেকেও কম । 
+আর যদি true হয় তাহলে আউটপুট আসবে Valid এবং তার সঙ্গে Total penalty money প্রিন্ট করতে হবে ।
+Total penalty money আমরা সূত্র দিয়েও বের করতে পারি অথবা লুপ দিয়েও বের করতে পারি । সূত্র ব্যবহার করলে Total penalty money = (K*(K+1)/2)*10 । আর লুপ দিয়ে করলে আমরা একটা লুপ চালাবো 1 থেকে K পর্যন্ত এবং 
+লুপের প্রত্যেক iteration এ আমরা একটা ভ্যারিয়বলে লুপের iterator*10 যোগ করবো ।
+
+উল্লেখ্য আউটপুটের ক্ষেত্রে বানান , কেস নাম্বার , স্পেস , ডট এবং ডলার সাইনের দিকে বিশেষভাবে লক্ষ রাখতে হবে ।
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+
+ 
+Solution 1:
+
+#include <stdio.h>
+
+int main()
+{
+    int tks,ks=1;
+    int i,d,m,y,t,k,r,day1,day2,penalty;
+    scanf("%d",&tks);
+    while(tks--)
+    {
+        scanf("%d%d%d",&d,&m,&y);
+        scanf("%d%d%d",&t,&r,&k);
+        day1=((30*8)+(2018*365)+12);
+        day2 = ((30*m)+(y*365)+d);
+        if(day2>day1)
+        {
+            if(t-k<r)
+                printf("Case %d: Invalid.\n",ks++);
+            else
+            {
+                printf("Case %d: Valid.\n",ks++);
+                penalty = ((k*(k+1))/2)*10;
+//    			  penalty = 0;
+//                for(i=1;i<=k;i++)
+//    			    penalty = penalty + i*10;
+                printf("Total Penalty Money: %d$.\n",penalty);
+            }
+        }
+        else
+            printf("Case %d: Expired.\n",ks++);
+    }
+
+    return 0;
+}
+
+
+ 
+Solution 2:
+
+#include <stdio.h>
+
+int main()
+{
+    int tks,ks=1;
+    int i,d,m,y,t,k,r,day1,day2,penalty;
+    scanf("%d",&tks);
+    while(tks--)
+    {
+        scanf("%d%d%d",&d,&m,&y);
+        scanf("%d%d%d",&t,&r,&k);
+        day1=((30*8)+(2018*365)+12);
+        day2 = ((30*m)+(y*365)+d);
+        if(day2<=day1)
+            printf("Case %d: Expired.\n",ks++);
+        else if(t-k<r)
+            printf("Case %d: Invalid.\n",ks++);
+        else
+        {
+            printf("Case %d: Valid.\n",ks++);
+			penalty = ((k*(k+1))/2)*10;
+//			  penalty = 0;
+//			  for(i=1;i<=k;i++)
+//			    penalty = penalty + i*10;
+            printf("Total Penalty Money: %d$.\n",penalty);
+        }
+    }
+
+    return 0;
+}
