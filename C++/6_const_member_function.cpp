@@ -110,7 +110,7 @@ int main()
 	something.print1();
 
 	const Something something2;
-	something2.getValue(); // calls const getValue();
+	something2.getValue()= "Hi"; // calls const getValue();
 	something2.print();
 	something2.print1();
 
