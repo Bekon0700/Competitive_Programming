@@ -1,4 +1,0 @@
-Case 1: Expired.
-Case 2: Invalid.
-Case 3: Valid.
-Total Penalty Money: 60$.

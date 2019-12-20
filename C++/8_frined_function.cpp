@@ -36,6 +36,5 @@ int main()
     Class2 ob2;
     print(ob1,ob2);
 
-
     return 0;
 }

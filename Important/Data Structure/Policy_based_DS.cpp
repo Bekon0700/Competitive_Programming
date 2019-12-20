@@ -34,7 +34,11 @@ int main()
     // number 7 not in the set but it will show the
     // index number if it was there in sorted array.
     cout << "The index of number seven ::"
-         << p.order_of_key(1) << endl;
+         << p.order_of_key(7) << endl;
+		 
+	// Deleting 2 from the set if it exists 
+    if (p.find(2) != p.end()) 
+        p.erase(p.find(2)); 
 
     return 0;
 }
